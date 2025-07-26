@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="5" passed="4" failed="1" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2025-07-25T07:42:13 IST" name="Default suite" finished-at="2025-07-25T07:43:45 IST" duration-ms="92022">
+    <groups>
+      <group name="cucumber">
+        <method signature="AbstractTestNGCucumberTests.runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:org.testRunner.TestRunner@2118cddf]" name="runScenario" class="io.cucumber.testng.AbstractTestNGCucumberTests"/>
+      </group> <!-- cucumber -->
+    </groups>
+    <test started-at="2025-07-25T07:42:13 IST" name="Default test" finished-at="2025-07-25T07:43:45 IST" duration-ms="92022">
+      <class name="org.testRunner.TestRunner">
+        <test-method is-config="true" signature="setUpClass(org.testng.ITestContext)[pri:0, instance:org.testRunner.TestRunner@2118cddf]" started-at="2025-07-25T07:42:13 IST" name="setUpClass" finished-at="2025-07-25T07:42:13 IST" duration-ms="188" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[org.testng.TestRunner@37d6dddc]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUpClass -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:org.testRunner.TestRunner@2118cddf]" started-at="2025-07-25T07:42:13 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2025-07-25T07:42:30 IST" duration-ms="16881" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Filter transactions by activity period with valid month"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Account Details Transaction Filters"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:org.testRunner.TestRunner@2118cddf]" started-at="2025-07-25T07:42:30 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2025-07-25T07:42:45 IST" duration-ms="15550" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Filter transactions by activity period with no transactions"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Account Details Transaction Filters"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:org.testRunner.TestRunner@2118cddf]" started-at="2025-07-25T07:42:45 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2025-07-25T07:43:02 IST" duration-ms="16749" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Filter transactions by transaction type - Credit"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Account Details Transaction Filters"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:org.testRunner.TestRunner@2118cddf]" started-at="2025-07-25T07:43:02 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2025-07-25T07:43:29 IST" duration-ms="27161" status="FAIL">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Filter transactions by transaction type - Debit"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Account Details Transaction Filters"]]>
+              </value>
+            </param>
+          </params>
+          <exception class="org.openqa.selenium.TimeoutException">
+            <message>
+              <![CDATA[Expected condition failed: waiting for visibility of [[SafariDriver: Safari on mac (9EC08867-54C8-4EAB-A83A-27423AE8525A)] -> xpath: //p[@id='noTransactions']] (tried for 10 second(s) with 500 milliseconds interval)
+Build info: version: '4.33.0', revision: '2c6aaad03a'
+System info: os.name: 'Mac OS X', os.arch: 'aarch64', os.version: '15.5', java.version: '22.0.2'
+Driver info: org.openqa.selenium.safari.SafariDriver
+Capabilities {acceptInsecureCerts: false, browserName: Safari, browserVersion: 18.5, platformName: mac, safari:automaticInspection: false, safari:automaticProfiling: false, safari:diagnose: false, safari:platformBuildVersion: 24F74, safari:platformVersion: 15.5, safari:useSimulator: false, setWindowRect: true, strictFileInteractability: false, webkit:WebRTC: {DisableICECandidateFiltering: false, DisableInsecureMediaCapture: false}}
+Session ID: 9EC08867-54C8-4EAB-A83A-27423AE8525A]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of [[SafariDriver: Safari on mac (9EC08867-54C8-4EAB-A83A-27423AE8525A)] -> xpath: //p[@id='noTransactions']] (tried for 10 second(s) with 500 milliseconds interval)
+Build info: version: '4.33.0', revision: '2c6aaad03a'
+System info: os.name: 'Mac OS X', os.arch: 'aarch64', os.version: '15.5', java.version: '22.0.2'
+Driver info: org.openqa.selenium.safari.SafariDriver
+Capabilities {acceptInsecureCerts: false, browserName: Safari, browserVersion: 18.5, platformName: mac, safari:automaticInspection: false, safari:automaticProfiling: false, safari:diagnose: false, safari:platformBuildVersion: 24F74, safari:platformVersion: 15.5, safari:useSimulator: false, setWindowRect: true, strictFileInteractability: false, webkit:WebRTC: {DisableICECandidateFiltering: false, DisableInsecureMediaCapture: false}}
+Session ID: 9EC08867-54C8-4EAB-A83A-27423AE8525A
+at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:84)
+at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:228)
+at org.base.BaseClass.waitUntilVisible(BaseClass.java:74)
+at org.stepdefinitions.AccountDetailsSteps.no_transactions_message_should_be_displayed(AccountDetailsSteps.java:85)
+at ✽.A "No transactions found." message should be displayed(file:///Users/prakashrajendran/Portfolio/WorkSpace/ParaBank/src/test/resources/FeatureFiles/accountDetails.feature:26)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.TimeoutException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:org.testRunner.TestRunner@2118cddf]" started-at="2025-07-25T07:43:29 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2025-07-25T07:43:45 IST" duration-ms="15433" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Validate account type using external file"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Account Details Transaction Filters"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method is-config="true" signature="tearDownClass()[pri:0, instance:org.testRunner.TestRunner@2118cddf]" started-at="2025-07-25T07:43:45 IST" name="tearDownClass" finished-at="2025-07-25T07:43:45 IST" duration-ms="20" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDownClass -->
+      </class> <!-- org.testRunner.TestRunner -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>

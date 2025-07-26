@@ -1,0 +1,137 @@
+<html>
+<head>
+<title>TestNG:  Default test</title>
+<link href="../testng.css" rel="stylesheet" type="text/css" />
+<link href="../my-testng.css" rel="stylesheet" type="text/css" />
+
+<style type="text/css">
+.log { display: none;} 
+.stack-trace { display: none;} 
+</style>
+<script type="text/javascript">
+<!--
+function flip(e) {
+  current = e.style.display;
+  if (current == 'block') {
+    e.style.display = 'none';
+    return 0;
+  }
+  else {
+    e.style.display = 'block';
+    return 1;
+  }
+}
+
+function toggleBox(szDivId, elem, msg1, msg2)
+{
+  var res = -1;  if (document.getElementById) {
+    res = flip(document.getElementById(szDivId));
+  }
+  else if (document.all) {
+    // this is the way old msie versions work
+    res = flip(document.all[szDivId]);
+  }
+  if(elem) {
+    if(res == 0) elem.innerHTML = msg1; else elem.innerHTML = msg2;
+  }
+
+}
+
+function toggleAllBoxes() {
+  if (document.getElementsByTagName) {
+    d = document.getElementsByTagName('div');
+    for (i = 0; i < d.length; i++) {
+      if (d[i].className == 'log') {
+        flip(d[i]);
+      }
+    }
+  }
+}
+
+// -->
+</script>
+
+</head>
+<body>
+<h2 align='center'>Default test</h2><table border='1' align="center">
+<tr>
+<td>Tests passed/Failed/Skipped:</td><td>4/1/0</td>
+</tr><tr>
+<td>Started on:</td><td>Fri Jul 25 07:42:13 IST 2025</td>
+</tr>
+<tr><td>Total time:</td><td>92 seconds (92022 ms)</td>
+</tr><tr>
+<td>Included groups:</td><td></td>
+</tr><tr>
+<td>Excluded groups:</td><td></td>
+</tr>
+</table><p/>
+<small><i>(Hover the method name to see the test class name)</i></small><p/>
+<table width='100%' border='1' class='invocation-failed'>
+<tr><td colspan='4' align='center'><b>FAILED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td><b>Attribute(s)</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='org.testRunner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: org.testRunner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Filter transactions by transaction type - Debit", "Account Details Transaction Filters"</td>
+<td><div><pre>org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of [[SafariDriver: Safari on mac (9EC08867-54C8-4EAB-A83A-27423AE8525A)] -&gt; xpath: //p[@id=&apos;noTransactions&apos;]] (tried for 10 second(s) with 500 milliseconds interval)
+Build info: version: &apos;4.33.0&apos;, revision: &apos;2c6aaad03a&apos;
+System info: os.name: &apos;Mac OS X&apos;, os.arch: &apos;aarch64&apos;, os.version: &apos;15.5&apos;, java.version: &apos;22.0.2&apos;
+Driver info: org.openqa.selenium.safari.SafariDriver
+Capabilities {acceptInsecureCerts: false, browserName: Safari, browserVersion: 18.5, platformName: mac, safari:automaticInspection: false, safari:automaticProfiling: false, safari:diagnose: false, safari:platformBuildVersion: 24F74, safari:platformVersion: 15.5, safari:useSimulator: false, setWindowRect: true, strictFileInteractability: false, webkit:WebRTC: {DisableICECandidateFiltering: false, DisableInsecureMediaCapture: false}}
+Session ID: 9EC08867-54C8-4EAB-A83A-27423AE8525A
+	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:84)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:228)
+	at org.base.BaseClass.waitUntilVisible(BaseClass.java:74)
+	at org.stepdefinitions.AccountDetailsSteps.no_transactions_message_should_be_displayed(AccountDetailsSteps.java:85)
+	at ✽.A &quot;No transactions found.&quot; message should be displayed(file:///Users/prakashrajendran/Portfolio/WorkSpace/ParaBank/src/test/resources/FeatureFiles/accountDetails.feature:26)
+</pre></div><a href='#' onClick='toggleBox("stack-trace120157876", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace120157876'><pre>org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of [[SafariDriver: Safari on mac (9EC08867-54C8-4EAB-A83A-27423AE8525A)] -&gt; xpath: //p[@id=&apos;noTransactions&apos;]] (tried for 10 second(s) with 500 milliseconds interval)
+Build info: version: &apos;4.33.0&apos;, revision: &apos;2c6aaad03a&apos;
+System info: os.name: &apos;Mac OS X&apos;, os.arch: &apos;aarch64&apos;, os.version: &apos;15.5&apos;, java.version: &apos;22.0.2&apos;
+Driver info: org.openqa.selenium.safari.SafariDriver
+Capabilities {acceptInsecureCerts: false, browserName: Safari, browserVersion: 18.5, platformName: mac, safari:automaticInspection: false, safari:automaticProfiling: false, safari:diagnose: false, safari:platformBuildVersion: 24F74, safari:platformVersion: 15.5, safari:useSimulator: false, setWindowRect: true, strictFileInteractability: false, webkit:WebRTC: {DisableICECandidateFiltering: false, DisableInsecureMediaCapture: false}}
+Session ID: 9EC08867-54C8-4EAB-A83A-27423AE8525A
+	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:84)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:228)
+	at org.base.BaseClass.waitUntilVisible(BaseClass.java:74)
+	at org.stepdefinitions.AccountDetailsSteps.no_transactions_message_should_be_displayed(AccountDetailsSteps.java:85)
+	at ✽.A &quot;No transactions found.&quot; message should be displayed(file:///Users/prakashrajendran/Portfolio/WorkSpace/ParaBank/src/test/resources/FeatureFiles/accountDetails.feature:26)
+</pre></div></td>
+<td>27</td>
+<td>org.testRunner.TestRunner@2118cddf</td></tr>
+</table><p>
+<table width='100%' border='1' class='invocation-passed'>
+<tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td><b>Attribute(s)</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='org.testRunner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: org.testRunner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Validate account type using external file", "Account Details Transaction Filters"</td>
+<td></td>
+<td>15</td>
+<td>org.testRunner.TestRunner@2118cddf</td></tr>
+<tr>
+<td title='org.testRunner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: org.testRunner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Filter transactions by transaction type - Credit", "Account Details Transaction Filters"</td>
+<td></td>
+<td>16</td>
+<td>org.testRunner.TestRunner@2118cddf</td></tr>
+<tr>
+<td title='org.testRunner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: org.testRunner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Filter transactions by activity period with no transactions", "Account Details Transaction Filters"</td>
+<td></td>
+<td>15</td>
+<td>org.testRunner.TestRunner@2118cddf</td></tr>
+<tr>
+<td title='org.testRunner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: org.testRunner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Filter transactions by activity period with valid month", "Account Details Transaction Filters"</td>
+<td></td>
+<td>16</td>
+<td>org.testRunner.TestRunner@2118cddf</td></tr>
+</table><p>
+</body>
+</html>
