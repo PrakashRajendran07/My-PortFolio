@@ -55,11 +55,11 @@ function toggleAllBoxes() {
 <body>
 <h2 align='center'>Default test</h2><table border='1' align="center">
 <tr>
-<td>Tests passed/Failed/Skipped:</td><td>4/1/0</td>
+<td>Tests passed/Failed/Skipped:</td><td>0/2/0</td>
 </tr><tr>
-<td>Started on:</td><td>Fri Jul 25 07:42:13 IST 2025</td>
+<td>Started on:</td><td>Thu Jul 31 07:22:09 IST 2025</td>
 </tr>
-<tr><td>Total time:</td><td>92 seconds (92022 ms)</td>
+<tr><td>Total time:</td><td>24 seconds (24555 ms)</td>
 </tr><tr>
 <td>Included groups:</td><td></td>
 </tr><tr>
@@ -76,61 +76,124 @@ function toggleAllBoxes() {
 <td><b>Instance</b></td>
 </tr>
 <tr>
-<td title='org.testRunner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: org.testRunner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Filter transactions by transaction type - Debit", "Account Details Transaction Filters"</td>
-<td><div><pre>org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of [[SafariDriver: Safari on mac (9EC08867-54C8-4EAB-A83A-27423AE8525A)] -&gt; xpath: //p[@id=&apos;noTransactions&apos;]] (tried for 10 second(s) with 500 milliseconds interval)
+<td title='org.testRunner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: org.testRunner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "User opens a new account and navigates to its details page", "Open New Account Functionality"</td>
+<td><div><pre>org.openqa.selenium.NoSuchElementException: For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
 Build info: version: &apos;4.33.0&apos;, revision: &apos;2c6aaad03a&apos;
-System info: os.name: &apos;Mac OS X&apos;, os.arch: &apos;aarch64&apos;, os.version: &apos;15.5&apos;, java.version: &apos;22.0.2&apos;
+System info: os.name: &apos;Mac OS X&apos;, os.arch: &apos;aarch64&apos;, os.version: &apos;26.0&apos;, java.version: &apos;22.0.2&apos;
 Driver info: org.openqa.selenium.safari.SafariDriver
-Capabilities {acceptInsecureCerts: false, browserName: Safari, browserVersion: 18.5, platformName: mac, safari:automaticInspection: false, safari:automaticProfiling: false, safari:diagnose: false, safari:platformBuildVersion: 24F74, safari:platformVersion: 15.5, safari:useSimulator: false, setWindowRect: true, strictFileInteractability: false, webkit:WebRTC: {DisableICECandidateFiltering: false, DisableInsecureMediaCapture: false}}
-Session ID: 9EC08867-54C8-4EAB-A83A-27423AE8525A
-	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:84)
-	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:228)
-	at org.base.BaseClass.waitUntilVisible(BaseClass.java:74)
-	at org.stepdefinitions.AccountDetailsSteps.no_transactions_message_should_be_displayed(AccountDetailsSteps.java:85)
-	at ✽.A &quot;No transactions found.&quot; message should be displayed(file:///Users/prakashrajendran/Portfolio/WorkSpace/ParaBank/src/test/resources/FeatureFiles/accountDetails.feature:26)
-</pre></div><a href='#' onClick='toggleBox("stack-trace120157876", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace120157876'><pre>org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of [[SafariDriver: Safari on mac (9EC08867-54C8-4EAB-A83A-27423AE8525A)] -&gt; xpath: //p[@id=&apos;noTransactions&apos;]] (tried for 10 second(s) with 500 milliseconds interval)
+Command: [BF1B2750-F4B9-46B8-848A-E350AFF985C4, findElement {using=xpath, value=//a[contains(text(),&apos;Open New Account&apos;)]}]
+Capabilities {acceptInsecureCerts: false, browserName: Safari, browserVersion: 26.0, platformName: mac, safari:automaticInspection: false, safari:automaticProfiling: false, safari:diagnose: false, safari:experimentalWebSocketUrl: false, safari:platformBuildVersion: 25A5316i, safari:platformVersion: 26.0, safari:useSimulator: false, setWindowRect: true, strictFileInteractability: false, webkit:WebRTC: {DisableICECandidateFiltering: false, DisableInsecureMediaCapture: false}, webkit:alwaysAllowAutoplay: false}
+Session ID: BF1B2750-F4B9-46B8-848A-E350AFF985C4
+	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:502)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:486)
+	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:215)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:544)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:367)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:361)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:68)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+	at jdk.proxy2/jdk.proxy2.$Proxy24.click(Unknown Source)
+	at org.base.BaseClass.click(BaseClass.java:60)
+	at org.stepdefinitions.OpenAccountSteps.the_user_opens_a_new_account_successfully(OpenAccountSteps.java:86)
+	at ✽.The user opens a new account successfully(file:///Users/prakashrajendran/git/repository-parabank_script/ParaBank/src/test/resources/FeatureFiles/openAccountPage.feature:20)
+</pre></div><a href='#' onClick='toggleBox("stack-trace81505591", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace81505591'><pre>org.openqa.selenium.NoSuchElementException: For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
 Build info: version: &apos;4.33.0&apos;, revision: &apos;2c6aaad03a&apos;
-System info: os.name: &apos;Mac OS X&apos;, os.arch: &apos;aarch64&apos;, os.version: &apos;15.5&apos;, java.version: &apos;22.0.2&apos;
+System info: os.name: &apos;Mac OS X&apos;, os.arch: &apos;aarch64&apos;, os.version: &apos;26.0&apos;, java.version: &apos;22.0.2&apos;
 Driver info: org.openqa.selenium.safari.SafariDriver
-Capabilities {acceptInsecureCerts: false, browserName: Safari, browserVersion: 18.5, platformName: mac, safari:automaticInspection: false, safari:automaticProfiling: false, safari:diagnose: false, safari:platformBuildVersion: 24F74, safari:platformVersion: 15.5, safari:useSimulator: false, setWindowRect: true, strictFileInteractability: false, webkit:WebRTC: {DisableICECandidateFiltering: false, DisableInsecureMediaCapture: false}}
-Session ID: 9EC08867-54C8-4EAB-A83A-27423AE8525A
-	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:84)
-	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:228)
-	at org.base.BaseClass.waitUntilVisible(BaseClass.java:74)
-	at org.stepdefinitions.AccountDetailsSteps.no_transactions_message_should_be_displayed(AccountDetailsSteps.java:85)
-	at ✽.A &quot;No transactions found.&quot; message should be displayed(file:///Users/prakashrajendran/Portfolio/WorkSpace/ParaBank/src/test/resources/FeatureFiles/accountDetails.feature:26)
+Command: [BF1B2750-F4B9-46B8-848A-E350AFF985C4, findElement {using=xpath, value=//a[contains(text(),&apos;Open New Account&apos;)]}]
+Capabilities {acceptInsecureCerts: false, browserName: Safari, browserVersion: 26.0, platformName: mac, safari:automaticInspection: false, safari:automaticProfiling: false, safari:diagnose: false, safari:experimentalWebSocketUrl: false, safari:platformBuildVersion: 25A5316i, safari:platformVersion: 26.0, safari:useSimulator: false, setWindowRect: true, strictFileInteractability: false, webkit:WebRTC: {DisableICECandidateFiltering: false, DisableInsecureMediaCapture: false}, webkit:alwaysAllowAutoplay: false}
+Session ID: BF1B2750-F4B9-46B8-848A-E350AFF985C4
+	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:502)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:486)
+	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:215)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:544)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:367)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:361)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:68)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+	at jdk.proxy2/jdk.proxy2.$Proxy24.click(Unknown Source)
+	at org.base.BaseClass.click(BaseClass.java:60)
+	at org.stepdefinitions.OpenAccountSteps.the_user_opens_a_new_account_successfully(OpenAccountSteps.java:86)
+	at ✽.The user opens a new account successfully(file:///Users/prakashrajendran/git/repository-parabank_script/ParaBank/src/test/resources/FeatureFiles/openAccountPage.feature:20)
 </pre></div></td>
-<td>27</td>
-<td>org.testRunner.TestRunner@2118cddf</td></tr>
-</table><p>
-<table width='100%' border='1' class='invocation-passed'>
-<tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
-<tr><td><b>Test method</b></td>
-<td><b>Attribute(s)</b></td>
-<td width="30%"><b>Exception</b></td>
-<td width="10%"><b>Time (seconds)</b></td>
-<td><b>Instance</b></td>
-</tr>
-<tr>
-<td title='org.testRunner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: org.testRunner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Validate account type using external file", "Account Details Transaction Filters"</td>
-<td></td>
-<td>15</td>
+<td>11</td>
 <td>org.testRunner.TestRunner@2118cddf</td></tr>
 <tr>
-<td title='org.testRunner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: org.testRunner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Filter transactions by transaction type - Credit", "Account Details Transaction Filters"</td>
-<td></td>
-<td>16</td>
-<td>org.testRunner.TestRunner@2118cddf</td></tr>
-<tr>
-<td title='org.testRunner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: org.testRunner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Filter transactions by activity period with no transactions", "Account Details Transaction Filters"</td>
-<td></td>
-<td>15</td>
-<td>org.testRunner.TestRunner@2118cddf</td></tr>
-<tr>
-<td title='org.testRunner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: org.testRunner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Filter transactions by activity period with valid month", "Account Details Transaction Filters"</td>
-<td></td>
-<td>16</td>
+<td title='org.testRunner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: org.testRunner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Successfully open a new account and verify updated balance", "Open New Account Functionality"</td>
+<td><div><pre>org.openqa.selenium.NoSuchElementException: For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: &apos;4.33.0&apos;, revision: &apos;2c6aaad03a&apos;
+System info: os.name: &apos;Mac OS X&apos;, os.arch: &apos;aarch64&apos;, os.version: &apos;26.0&apos;, java.version: &apos;22.0.2&apos;
+Driver info: org.openqa.selenium.safari.SafariDriver
+Command: [719A545B-A26E-44A6-8046-51562690D4BD, findElement {using=xpath, value=//a[contains(text(),&apos;Accounts Overview&apos;)]}]
+Capabilities {acceptInsecureCerts: false, browserName: Safari, browserVersion: 26.0, platformName: mac, safari:automaticInspection: false, safari:automaticProfiling: false, safari:diagnose: false, safari:experimentalWebSocketUrl: false, safari:platformBuildVersion: 25A5316i, safari:platformVersion: 26.0, safari:useSimulator: false, setWindowRect: true, strictFileInteractability: false, webkit:WebRTC: {DisableICECandidateFiltering: false, DisableInsecureMediaCapture: false}, webkit:alwaysAllowAutoplay: false}
+Session ID: 719A545B-A26E-44A6-8046-51562690D4BD
+	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:502)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:486)
+	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:215)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:544)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:367)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:361)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:68)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+	at jdk.proxy2/jdk.proxy2.$Proxy24.click(Unknown Source)
+	at org.base.BaseClass.click(BaseClass.java:60)
+	at org.stepdefinitions.OpenAccountSteps.the_user_is_on_the_accounts_overview_page(OpenAccountSteps.java:21)
+	at ✽.The user is on the Accounts Overview page(file:///Users/prakashrajendran/git/repository-parabank_script/ParaBank/src/test/resources/FeatureFiles/openAccountPage.feature:6)
+</pre></div><a href='#' onClick='toggleBox("stack-trace1016090398", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1016090398'><pre>org.openqa.selenium.NoSuchElementException: For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: &apos;4.33.0&apos;, revision: &apos;2c6aaad03a&apos;
+System info: os.name: &apos;Mac OS X&apos;, os.arch: &apos;aarch64&apos;, os.version: &apos;26.0&apos;, java.version: &apos;22.0.2&apos;
+Driver info: org.openqa.selenium.safari.SafariDriver
+Command: [719A545B-A26E-44A6-8046-51562690D4BD, findElement {using=xpath, value=//a[contains(text(),&apos;Accounts Overview&apos;)]}]
+Capabilities {acceptInsecureCerts: false, browserName: Safari, browserVersion: 26.0, platformName: mac, safari:automaticInspection: false, safari:automaticProfiling: false, safari:diagnose: false, safari:experimentalWebSocketUrl: false, safari:platformBuildVersion: 25A5316i, safari:platformVersion: 26.0, safari:useSimulator: false, setWindowRect: true, strictFileInteractability: false, webkit:WebRTC: {DisableICECandidateFiltering: false, DisableInsecureMediaCapture: false}, webkit:alwaysAllowAutoplay: false}
+Session ID: 719A545B-A26E-44A6-8046-51562690D4BD
+	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:502)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:486)
+	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:215)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:544)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:367)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:361)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:68)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+	at jdk.proxy2/jdk.proxy2.$Proxy24.click(Unknown Source)
+	at org.base.BaseClass.click(BaseClass.java:60)
+	at org.stepdefinitions.OpenAccountSteps.the_user_is_on_the_accounts_overview_page(OpenAccountSteps.java:21)
+	at ✽.The user is on the Accounts Overview page(file:///Users/prakashrajendran/git/repository-parabank_script/ParaBank/src/test/resources/FeatureFiles/openAccountPage.feature:6)
+</pre></div></td>
+<td>12</td>
 <td>org.testRunner.TestRunner@2118cddf</td></tr>
 </table><p>
 </body>

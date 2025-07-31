@@ -176,6 +176,15 @@ public class BaseClass {
 			listIds.addAll(allIds);
 			driver.switchTo().window(listIds.get(windowID));
 		}
+		public String getText(WebElement element) {
+	        return element.getText();
+	    }
+		
+		public double parseCurrency(String balanceText) {
+		    return Double.parseDouble(balanceText.replace("$", "").replace(",", "").trim());
+		}
+
+
 		
 		public String captureScreen(String tname) throws IOException{
 			String timeStamp=new SimpleDateFormat("yyyyMMddHHss").format(new Date());

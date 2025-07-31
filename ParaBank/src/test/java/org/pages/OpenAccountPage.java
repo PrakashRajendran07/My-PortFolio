@@ -19,9 +19,36 @@ public class OpenAccountPage extends BaseClass {
 
     @FindBy(xpath = "//input[@value='Open New Account']")
     private WebElement openNewAccountButton;
+    
+    @FindBy(xpath = "//a[contains(text(),'Open New Account')]")
+    private WebElement openAccountPage;
 
+    @FindBy(xpath = "//p[contains(text(),'now open.')]")
+    private WebElement successMessage; 
+    
+    @FindBy(xpath = "//a[@id='newAccountId']")
+    private WebElement newAccountNumberLink; 
+    
+    @FindBy(xpath = "//h1[contains(text(),'Open New Account')]")
+    private WebElement openAccountTitle; 
 
-    public WebElement getAccountTypeDropdown() {
+    public WebElement getOpenAccountTitle() {
+		return openAccountTitle;
+	}
+
+	public WebElement getNewAccountNumberLink() {
+		return newAccountNumberLink;
+	}
+
+	public WebElement getOpenAccountPage() {
+		return openAccountPage;
+	}
+
+	public WebElement getSuccessMessage() {
+		return successMessage;
+	}
+
+	public WebElement getAccountTypeDropdown() {
         return accountTypeDropdown;
     }
 

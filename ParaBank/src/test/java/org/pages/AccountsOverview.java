@@ -1,4 +1,5 @@
 package org.pages;
+import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
@@ -21,8 +22,21 @@ public class AccountsOverview extends BaseClass {
 
     @FindBy(xpath = "//table[@id='accountTable']//tr/td[2]")
     private List<WebElement> accountBalances;
+    
+    @FindBy(xpath = "//a[contains(text(),'Accounts Overview')]")
+    private WebElement accountsOverviewLink;
+    
+    public String getAccountBalance(String accountNumber) {
+        String xpath = "//a[text()='" + accountNumber + "']/parent::td/following-sibling::td[1]";
+        WebElement balanceElement = driver.findElement(By.xpath(xpath));
+        return balanceElement.getText();
+    }
 
-    public List<WebElement> getAccountLinks() {
+    public WebElement getAccountsOverviewLink() {
+		return accountsOverviewLink;
+	}
+
+	public List<WebElement> getAccountLinks() {
         return accountLinks;
     }
 

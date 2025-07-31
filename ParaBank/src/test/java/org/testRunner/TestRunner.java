@@ -4,7 +4,7 @@ import io.cucumber.testng.AbstractTestNGCucumberTests;
 import io.cucumber.testng.CucumberOptions;
 
 @CucumberOptions(
-    features = {"src/test/resources/FeatureFiles/accountDetails.feature"},
+    features = {"src/test/resources/FeatureFiles/openAccountPage.feature"},
     glue = {"org.stepdefinitions"},
     dryRun = false,
     monochrome = true,
