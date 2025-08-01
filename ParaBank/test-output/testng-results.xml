@@ -1,31 +1,31 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="2" passed="0" failed="2" skipped="0">
+<testng-results ignored="0" total="4" passed="4" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2025-07-31T07:22:09 IST" name="Default suite" finished-at="2025-07-31T07:22:33 IST" duration-ms="24555">
+  <suite started-at="2025-08-01T07:08:15 IST" name="Default suite" finished-at="2025-08-01T07:09:49 IST" duration-ms="93600">
     <groups>
       <group name="cucumber">
         <method signature="AbstractTestNGCucumberTests.runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:org.testRunner.TestRunner@2118cddf]" name="runScenario" class="io.cucumber.testng.AbstractTestNGCucumberTests"/>
       </group> <!-- cucumber -->
     </groups>
-    <test started-at="2025-07-31T07:22:09 IST" name="Default test" finished-at="2025-07-31T07:22:33 IST" duration-ms="24555">
+    <test started-at="2025-08-01T07:08:15 IST" name="Default test" finished-at="2025-08-01T07:09:49 IST" duration-ms="93600">
       <class name="org.testRunner.TestRunner">
-        <test-method is-config="true" signature="setUpClass(org.testng.ITestContext)[pri:0, instance:org.testRunner.TestRunner@2118cddf]" started-at="2025-07-31T07:22:09 IST" name="setUpClass" finished-at="2025-07-31T07:22:09 IST" duration-ms="207" status="PASS">
+        <test-method is-config="true" signature="setUpClass(org.testng.ITestContext)[pri:0, instance:org.testRunner.TestRunner@2118cddf]" started-at="2025-08-01T07:08:15 IST" name="setUpClass" finished-at="2025-08-01T07:08:16 IST" duration-ms="213" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[org.testng.TestRunner@2babf189]]>
+                <![CDATA[org.testng.TestRunner@4d7a64ca]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUpClass -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:org.testRunner.TestRunner@2118cddf]" started-at="2025-07-31T07:22:09 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2025-07-31T07:22:22 IST" duration-ms="12507" status="FAIL">
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:org.testRunner.TestRunner@2118cddf]" started-at="2025-08-01T07:08:16 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2025-08-01T07:08:43 IST" duration-ms="27525" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA["Successfully open a new account and verify updated balance"]]>
+                <![CDATA["Verify opening a new savings account"]]>
               </value>
             </param>
             <param index="1">
@@ -34,55 +34,14 @@
               </value>
             </param>
           </params>
-          <exception class="org.openqa.selenium.NoSuchElementException">
-            <message>
-              <![CDATA[For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
-Build info: version: '4.33.0', revision: '2c6aaad03a'
-System info: os.name: 'Mac OS X', os.arch: 'aarch64', os.version: '26.0', java.version: '22.0.2'
-Driver info: org.openqa.selenium.safari.SafariDriver
-Command: [719A545B-A26E-44A6-8046-51562690D4BD, findElement {using=xpath, value=//a[contains(text(),'Accounts Overview')]}]
-Capabilities {acceptInsecureCerts: false, browserName: Safari, browserVersion: 26.0, platformName: mac, safari:automaticInspection: false, safari:automaticProfiling: false, safari:diagnose: false, safari:experimentalWebSocketUrl: false, safari:platformBuildVersion: 25A5316i, safari:platformVersion: 26.0, safari:useSimulator: false, setWindowRect: true, strictFileInteractability: false, webkit:WebRTC: {DisableICECandidateFiltering: false, DisableInsecureMediaCapture: false}, webkit:alwaysAllowAutoplay: false}
-Session ID: 719A545B-A26E-44A6-8046-51562690D4BD]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[org.openqa.selenium.NoSuchElementException: For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
-Build info: version: '4.33.0', revision: '2c6aaad03a'
-System info: os.name: 'Mac OS X', os.arch: 'aarch64', os.version: '26.0', java.version: '22.0.2'
-Driver info: org.openqa.selenium.safari.SafariDriver
-Command: [719A545B-A26E-44A6-8046-51562690D4BD, findElement {using=xpath, value=//a[contains(text(),'Accounts Overview')]}]
-Capabilities {acceptInsecureCerts: false, browserName: Safari, browserVersion: 26.0, platformName: mac, safari:automaticInspection: false, safari:automaticProfiling: false, safari:diagnose: false, safari:experimentalWebSocketUrl: false, safari:platformBuildVersion: 25A5316i, safari:platformVersion: 26.0, safari:useSimulator: false, setWindowRect: true, strictFileInteractability: false, webkit:WebRTC: {DisableICECandidateFiltering: false, DisableInsecureMediaCapture: false}, webkit:alwaysAllowAutoplay: false}
-Session ID: 719A545B-A26E-44A6-8046-51562690D4BD
-at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
-at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:502)
-at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:486)
-at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
-at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
-at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
-at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:215)
-at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
-at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
-at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:544)
-at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
-at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
-at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:367)
-at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:361)
-at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:68)
-at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
-at jdk.proxy2/jdk.proxy2.$Proxy24.click(Unknown Source)
-at org.base.BaseClass.click(BaseClass.java:60)
-at org.stepdefinitions.OpenAccountSteps.the_user_is_on_the_accounts_overview_page(OpenAccountSteps.java:21)
-at ✽.The user is on the Accounts Overview page(file:///Users/prakashrajendran/git/repository-parabank_script/ParaBank/src/test/resources/FeatureFiles/openAccountPage.feature:6)
-]]>
-            </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.NoSuchElementException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- runScenario -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:org.testRunner.TestRunner@2118cddf]" started-at="2025-07-31T07:22:22 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2025-07-31T07:22:33 IST" duration-ms="11657" status="FAIL">
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:org.testRunner.TestRunner@2118cddf]" started-at="2025-08-01T07:08:43 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2025-08-01T07:09:09 IST" duration-ms="25878" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA["User opens a new account and navigates to its details page"]]>
+                <![CDATA["Verify opening a new checking account"]]>
               </value>
             </param>
             <param index="1">
@@ -91,51 +50,42 @@ at ✽.The user is on the Accounts Overview page(file:///Users/prakashrajendran/
               </value>
             </param>
           </params>
-          <exception class="org.openqa.selenium.NoSuchElementException">
-            <message>
-              <![CDATA[For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
-Build info: version: '4.33.0', revision: '2c6aaad03a'
-System info: os.name: 'Mac OS X', os.arch: 'aarch64', os.version: '26.0', java.version: '22.0.2'
-Driver info: org.openqa.selenium.safari.SafariDriver
-Command: [BF1B2750-F4B9-46B8-848A-E350AFF985C4, findElement {using=xpath, value=//a[contains(text(),'Open New Account')]}]
-Capabilities {acceptInsecureCerts: false, browserName: Safari, browserVersion: 26.0, platformName: mac, safari:automaticInspection: false, safari:automaticProfiling: false, safari:diagnose: false, safari:experimentalWebSocketUrl: false, safari:platformBuildVersion: 25A5316i, safari:platformVersion: 26.0, safari:useSimulator: false, setWindowRect: true, strictFileInteractability: false, webkit:WebRTC: {DisableICECandidateFiltering: false, DisableInsecureMediaCapture: false}, webkit:alwaysAllowAutoplay: false}
-Session ID: BF1B2750-F4B9-46B8-848A-E350AFF985C4]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[org.openqa.selenium.NoSuchElementException: For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
-Build info: version: '4.33.0', revision: '2c6aaad03a'
-System info: os.name: 'Mac OS X', os.arch: 'aarch64', os.version: '26.0', java.version: '22.0.2'
-Driver info: org.openqa.selenium.safari.SafariDriver
-Command: [BF1B2750-F4B9-46B8-848A-E350AFF985C4, findElement {using=xpath, value=//a[contains(text(),'Open New Account')]}]
-Capabilities {acceptInsecureCerts: false, browserName: Safari, browserVersion: 26.0, platformName: mac, safari:automaticInspection: false, safari:automaticProfiling: false, safari:diagnose: false, safari:experimentalWebSocketUrl: false, safari:platformBuildVersion: 25A5316i, safari:platformVersion: 26.0, safari:useSimulator: false, setWindowRect: true, strictFileInteractability: false, webkit:WebRTC: {DisableICECandidateFiltering: false, DisableInsecureMediaCapture: false}, webkit:alwaysAllowAutoplay: false}
-Session ID: BF1B2750-F4B9-46B8-848A-E350AFF985C4
-at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
-at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:502)
-at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:486)
-at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
-at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
-at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
-at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:215)
-at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
-at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
-at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:544)
-at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
-at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
-at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:367)
-at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:361)
-at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:68)
-at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
-at jdk.proxy2/jdk.proxy2.$Proxy24.click(Unknown Source)
-at org.base.BaseClass.click(BaseClass.java:60)
-at org.stepdefinitions.OpenAccountSteps.the_user_opens_a_new_account_successfully(OpenAccountSteps.java:86)
-at ✽.The user opens a new account successfully(file:///Users/prakashrajendran/git/repository-parabank_script/ParaBank/src/test/resources/FeatureFiles/openAccountPage.feature:20)
-]]>
-            </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.NoSuchElementException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- runScenario -->
-        <test-method is-config="true" signature="tearDownClass()[pri:0, instance:org.testRunner.TestRunner@2118cddf]" started-at="2025-07-31T07:22:33 IST" name="tearDownClass" finished-at="2025-07-31T07:22:33 IST" duration-ms="132" status="PASS">
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:org.testRunner.TestRunner@2118cddf]" started-at="2025-08-01T07:09:09 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2025-08-01T07:09:32 IST" duration-ms="22629" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Verify that the balance is reduced from the source account after successful creation of new account"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Open New Account Functionality"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:org.testRunner.TestRunner@2118cddf]" started-at="2025-08-01T07:09:32 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2025-08-01T07:09:49 IST" duration-ms="17308" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Verify clicking on the new account number navigates to the account details page"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Open New Account Functionality"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method is-config="true" signature="tearDownClass()[pri:0, instance:org.testRunner.TestRunner@2118cddf]" started-at="2025-08-01T07:09:49 IST" name="tearDownClass" finished-at="2025-08-01T07:09:49 IST" duration-ms="11" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDownClass -->

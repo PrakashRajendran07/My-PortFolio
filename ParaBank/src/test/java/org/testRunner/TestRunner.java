@@ -8,6 +8,7 @@ import io.cucumber.testng.CucumberOptions;
     glue = {"org.stepdefinitions"},
     dryRun = false,
     monochrome = true,
+  //  tags = "(@navigation)",
     plugin = {"pretty", "html:target/cucumber-reports.html"}
 )
 public class TestRunner extends AbstractTestNGCucumberTests {
