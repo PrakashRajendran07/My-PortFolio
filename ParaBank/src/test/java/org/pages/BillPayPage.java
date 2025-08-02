@@ -3,6 +3,9 @@ package org.pages;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
+
+import java.util.List;
+
 import org.base.BaseClass;
 
 public class BillPayPage extends BaseClass {
@@ -43,8 +46,36 @@ public class BillPayPage extends BaseClass {
 
     @FindBy(xpath = "//input[@value='Send Payment']")
     private WebElement sendPaymentButton;
+    
+    @FindBy(xpath = " //a[contains(text(),'Bill Pay')]")
+    private WebElement billPayLink;
+    
+    @FindBy(xpath = "//h1[contains(text(),'Bill Payment Service')]")
+    private WebElement billPayHeader;
+    
+    @FindBy(xpath = "//p[contains(text(),'Bill Payment to')]")
+    private WebElement successMessage;
+    
+    @FindBy(xpath = "//span[@class='error' and normalize-space(text())]")
+    private List<WebElement> errorMessages;
+  
+    public List<WebElement> getErrorMessages() {
+		return errorMessages;
+	}
 
-    public WebElement getPayeeName() {
+	public WebElement getSuccessMessage() {
+		return successMessage;
+	}
+
+	public WebElement getBillPayHeader() {
+		return billPayHeader;
+	}
+
+	public WebElement getBillPayLink() {
+		return billPayLink;
+	}
+
+	public WebElement getPayeeName() {
         return payeeName;
     }
 

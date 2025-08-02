@@ -82,6 +82,10 @@ public class BaseClass {
 		            return false;
 		        }
 		    }
+		 public void waitForVisibilityOfElement(By locator, int timeoutInSeconds) {
+			    WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(timeoutInSeconds));
+			    wait.until(ExpectedConditions.visibilityOfElementLocated(locator));
+			}
 		 public static WebElement waitForPresence(By locator, int timeoutInSeconds) {
 			    WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(timeoutInSeconds));
 			    return wait.until(ExpectedConditions.presenceOfElementLocated(locator));
@@ -215,6 +219,15 @@ public class BaseClass {
 			    // Move screenshot file
 			    sourceFile.renameTo(targetFile);
 			    return targetFilePath;
+			}
+			public String getElementText(WebElement element) {
+			    String text = "";
+			    try {
+			        text = element.getText().trim();
+			    } catch (Exception e) {
+			        System.out.println("Unable to retrieve text: " + e.getMessage());
+			    }
+			    return text;
 			}
 		public String readExcelFile(String filename, String sheetNo, int rowNum, int cellNum) throws IOException {
 			String filePath = System.getProperty("user.dir") + File.separator + "ExternalFiles" + File.separator + filename + ".xlsx";
