@@ -22,8 +22,27 @@ public class RequestLoanPage extends BaseClass {
 
     @FindBy(xpath = "//input[@value='Apply Now']")
     private WebElement applyNowButton;
+    
+    @FindBy(xpath = "//p[contains(text(),'Congratulations')]")
+    private WebElement successMessage;
 
-    public WebElement getLoanAmount() {
+    @FindBy(xpath = "//p[contains(text(),'You do not have sufficient funds')]")
+    private WebElement errorMessage;
+
+    @FindBy(id = "loanStatus")
+    private WebElement loanStatus;
+
+    @FindBy(id = "newAccountId")
+    private WebElement newAccountNumber;
+    
+    @FindBy(xpath = "//a[text()='Request Loan']")
+    private WebElement requestLoanLink;
+
+    public WebElement getRequestLoanLink() {
+		return requestLoanLink;
+	}
+
+	public WebElement getLoanAmount() {
         return loanAmount;
     }
 
@@ -37,6 +56,25 @@ public class RequestLoanPage extends BaseClass {
 
     public WebElement getApplyNowButton() {
         return applyNowButton;
+    }
+    public WebElement getSuccessMessage() {
+        return successMessage;
+    }
+
+    public WebElement getErrorMessage() {
+        return errorMessage;
+    }
+
+    public WebElement getLoanStatus() {
+        return loanStatus;
+    }
+
+    public WebElement getNewAccountNumber() {
+        return newAccountNumber;
+    }
+    
+    public String getNewAccountNumberText() {
+        return newAccountNumber.getText().trim();
     }
 
 }

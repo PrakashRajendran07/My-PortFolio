@@ -17,7 +17,7 @@ public class AccountDetailsPage extends BaseClass {
     @FindBy(xpath = "//h1[contains(text(),'Account Details')]")
     private WebElement accountDetailsHeading;
 
-    @FindBy(css = "td#accountId")
+    @FindBy(id = "accountId")
     private WebElement accountNumber;
 
     @FindBy(id = "balance")
@@ -75,10 +75,10 @@ public class AccountDetailsPage extends BaseClass {
     public String getAccountNumber() {
         return accountNumber.getText().trim();
     }
+    
     public WebElement getAccountNumberElement() {
         return accountNumber;
     }
-    
 
     public WebElement getBalance() {
         return balance;
