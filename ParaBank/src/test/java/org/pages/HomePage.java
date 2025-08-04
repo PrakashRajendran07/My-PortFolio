@@ -17,7 +17,7 @@ public class HomePage extends BaseClass{
     @FindBy(linkText = "Accounts Overview")
     private WebElement accountsOverview;
 
-    @FindBy(linkText = "Transfer Funds")
+    @FindBy(xpath = "//a[normalize-space(text())='Transfer Funds']")
     private WebElement transferFunds;
 
     @FindBy(linkText = "Bill Pay")
@@ -35,7 +35,6 @@ public class HomePage extends BaseClass{
     @FindBy(linkText = "Log Out")
     private WebElement logOut;
 
-    // Getters for all elements
     public WebElement getOpenNewAccount() {
         return openNewAccount;
     }

@@ -1,75 +1,103 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="3" passed="3" failed="0" skipped="0">
+<testng-results ignored="0" total="3" passed="1" failed="2" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2025-08-03T19:36:08 IST" name="Default suite" finished-at="2025-08-03T19:37:02 IST" duration-ms="53916">
+  <suite started-at="2025-08-04T07:06:25 IST" name="Default suite" finished-at="2025-08-04T07:07:25 IST" duration-ms="59125">
     <groups>
       <group name="cucumber">
         <method signature="AbstractTestNGCucumberTests.runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:org.testRunner.TestRunner@2118cddf]" name="runScenario" class="io.cucumber.testng.AbstractTestNGCucumberTests"/>
       </group> <!-- cucumber -->
     </groups>
-    <test started-at="2025-08-03T19:36:08 IST" name="Default test" finished-at="2025-08-03T19:37:02 IST" duration-ms="53916">
+    <test started-at="2025-08-04T07:06:25 IST" name="Default test" finished-at="2025-08-04T07:07:25 IST" duration-ms="59125">
       <class name="org.testRunner.TestRunner">
-        <test-method is-config="true" signature="setUpClass(org.testng.ITestContext)[pri:0, instance:org.testRunner.TestRunner@2118cddf]" started-at="2025-08-03T19:36:08 IST" name="setUpClass" finished-at="2025-08-03T19:36:08 IST" duration-ms="202" status="PASS">
+        <test-method is-config="true" signature="setUpClass(org.testng.ITestContext)[pri:0, instance:org.testRunner.TestRunner@2118cddf]" started-at="2025-08-04T07:06:25 IST" name="setUpClass" finished-at="2025-08-04T07:06:26 IST" duration-ms="214" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[org.testng.TestRunner@59ce792e]]>
+                <![CDATA[org.testng.TestRunner@6801b414]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUpClass -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:org.testRunner.TestRunner@2118cddf]" started-at="2025-08-03T19:36:08 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2025-08-03T19:36:25 IST" duration-ms="17445" status="PASS">
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:org.testRunner.TestRunner@2118cddf]" started-at="2025-08-04T07:06:26 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2025-08-04T07:06:44 IST" duration-ms="18657" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA["Requesting loan with insufficient funds"]]>
+                <![CDATA["Requesting fund transfer with valid amount and different from/to accounts"]]>
               </value>
             </param>
             <param index="1">
               <value>
-                <![CDATA["Loan Request Functionality"]]>
+                <![CDATA["Fund Transfer Functionality"]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- runScenario -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:org.testRunner.TestRunner@2118cddf]" started-at="2025-08-03T19:36:25 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2025-08-03T19:36:43 IST" duration-ms="17569" status="PASS">
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:org.testRunner.TestRunner@2118cddf]" started-at="2025-08-04T07:06:44 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2025-08-04T07:07:03 IST" duration-ms="18438" status="FAIL">
           <params>
             <param index="0">
               <value>
-                <![CDATA["Requesting loan with sufficient funds"]]>
+                <![CDATA["Requesting fund transfer with same from and to accounts"]]>
               </value>
             </param>
             <param index="1">
               <value>
-                <![CDATA["Loan Request Functionality"]]>
+                <![CDATA["Fund Transfer Functionality"]]>
               </value>
             </param>
           </params>
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[Error message mismatch expected [true] but found [false]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: Error message mismatch expected [true] but found [false]
+at org.testng.Assert.fail(Assert.java:111)
+at org.testng.Assert.failNotEquals(Assert.java:1590)
+at org.testng.Assert.assertTrue(Assert.java:57)
+at org.stepdefinitions.FundTransferSteps.the_system_should_display_an_error_message_indicating(FundTransferSteps.java:103)
+at ✽.The system should display an error message indicating "From and To account numbers should not be the same"(file:///Users/prakashrajendran/git/repository-parabank_script/ParaBank/src/test/resources/FeatureFiles/fundTransferPage.feature:24)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- runScenario -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:org.testRunner.TestRunner@2118cddf]" started-at="2025-08-03T19:36:43 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2025-08-03T19:37:02 IST" duration-ms="18645" status="PASS">
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:org.testRunner.TestRunner@2118cddf]" started-at="2025-08-04T07:07:03 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2025-08-04T07:07:25 IST" duration-ms="21763" status="FAIL">
           <params>
             <param index="0">
               <value>
-                <![CDATA["Verifying new loan account from account details page"]]>
+                <![CDATA["Requesting fund transfer with negative amount"]]>
               </value>
             </param>
             <param index="1">
               <value>
-                <![CDATA["Loan Request Functionality"]]>
+                <![CDATA["Fund Transfer Functionality"]]>
               </value>
             </param>
           </params>
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[Error message mismatch expected [true] but found [false]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: Error message mismatch expected [true] but found [false]
+at org.testng.Assert.fail(Assert.java:111)
+at org.testng.Assert.failNotEquals(Assert.java:1590)
+at org.testng.Assert.assertTrue(Assert.java:57)
+at org.stepdefinitions.FundTransferSteps.the_system_should_display_an_error_message__for_negative_amount_indicatfing(FundTransferSteps.java:110)
+at ✽.The system should display an error message for negative amount indicating "The amount cannot be negative"(file:///Users/prakashrajendran/git/repository-parabank_script/ParaBank/src/test/resources/FeatureFiles/fundTransferPage.feature:33)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- runScenario -->
-        <test-method is-config="true" signature="tearDownClass()[pri:0, instance:org.testRunner.TestRunner@2118cddf]" started-at="2025-08-03T19:37:02 IST" name="tearDownClass" finished-at="2025-08-03T19:37:02 IST" duration-ms="24" status="PASS">
+        <test-method is-config="true" signature="tearDownClass()[pri:0, instance:org.testRunner.TestRunner@2118cddf]" started-at="2025-08-04T07:07:25 IST" name="tearDownClass" finished-at="2025-08-04T07:07:25 IST" duration-ms="19" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDownClass -->

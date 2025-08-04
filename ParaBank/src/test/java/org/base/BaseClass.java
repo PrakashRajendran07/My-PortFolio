@@ -98,6 +98,10 @@ public class BaseClass {
 			            .equals("complete")
 			    );
 		 }
+		 public String getSelectedOption(WebElement dropdownElement) {
+			    Select select = new Select(dropdownElement);
+			    return select.getFirstSelectedOption().getText().trim();
+			}
 			    
 			    
 		public static void scriptClick(WebElement clickPoint) {

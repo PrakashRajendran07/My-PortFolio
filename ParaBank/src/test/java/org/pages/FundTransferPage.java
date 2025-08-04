@@ -22,9 +22,45 @@ public class FundTransferPage extends BaseClass {
 
     @FindBy(xpath = "//input[@value='Transfer']")
     private WebElement transferButton;
+    
+    @FindBy(id = "amountResult")
+    private WebElement amountResult;
+    
+    @FindBy(id = "fromAccountIdResult")
+    private WebElement fromAccountResult;
 
+	@FindBy(id = "toAccountIdResult")
+    private WebElement toAccountResult;
+    
+    
+    @FindBy(xpath = " //a[contains(text(),'From and To account numbers should not be the same')]")
+    private WebElement sameAccError;
+    
+    @FindBy(xpath = " //a[contains(text(),'The amount cannot be negative')]")
+    private WebElement negativeAmountError;
+    
+    
+    public WebElement getSameAccError() {
+		return sameAccError;
+	}
 
-    public WebElement getAmountInput() {
+	public WebElement getNegativeAmountError() {
+		return negativeAmountError;
+	}
+
+    public WebElement getAmountResult() {
+		return amountResult;
+	}
+
+	public WebElement getFromAccountResult() {
+		return fromAccountResult;
+	}
+
+	public WebElement getToAccountResult() {
+		return toAccountResult;
+	}
+
+	public WebElement getAmountInput() {
         return amountInput;
     }
 
