@@ -2,7 +2,6 @@ package org.stepdefinitions;
 
 import org.base.BaseClass;
 import org.openqa.selenium.WebElement;
-import org.openqa.selenium.interactions.Actions;
 import org.pages.FundTransferPage;
 import org.pages.HomePage;
 import org.pages.LoginPage;

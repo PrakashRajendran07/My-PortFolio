@@ -3,6 +3,9 @@ package org.pages;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
+
+import java.util.List;
+
 import org.base.BaseClass;
 
 public class UpdateContactInfoPage extends BaseClass {
@@ -34,6 +37,22 @@ public class UpdateContactInfoPage extends BaseClass {
     
     @FindBy(xpath = "//input[@class='button']")
     private WebElement updateProfileBtn;
+    
+    @FindBy(xpath = " //p[contains(text(),'Your updated address and')]")
+    private WebElement successMessage;
+    
+    
+    public WebElement getSuccessMessage() {
+		return successMessage;
+	}
+
+	@FindBy(xpath = "//span[@class='error']")
+    private List<WebElement> errorMessages;
+    
+
+    public List<WebElement> getErrorMessages() {
+        return errorMessages;
+    }
 
     public WebElement getFirstName() {
         return firstName;

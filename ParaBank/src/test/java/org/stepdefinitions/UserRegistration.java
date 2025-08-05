@@ -55,7 +55,6 @@ public class UserRegistration extends BaseClass {
         typeValue(registrationPage.getPassword(), "password123");
         typeValue(registrationPage.getConfirmPassword(), "password123");
 
-        // Clear the specific field to simulate missing data
         switch (fieldToLeaveBlank.toLowerCase()) {
             case "first name":
                 registrationPage.getFirstName().clear();

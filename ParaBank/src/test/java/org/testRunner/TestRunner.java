@@ -4,11 +4,11 @@ import io.cucumber.testng.AbstractTestNGCucumberTests;
 import io.cucumber.testng.CucumberOptions;
 
 @CucumberOptions(
-    features = {"src/test/resources/FeatureFiles/fundTransferPage.feature"},
+    features = {"src/test/resources/FeatureFiles/updateProfile.feature"},
     glue = {"org.stepdefinitions"},
     dryRun = false,
     monochrome = true,
- //   tags = "(@negative2)",
+    tags = "(@Negative)",
     plugin = {"pretty", "html:target/cucumber-reports.html"}
 )
 public class TestRunner extends AbstractTestNGCucumberTests {
