@@ -1,107 +1,234 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="3" passed="1" failed="2" skipped="0">
+<testng-results ignored="0" total="12" passed="11" failed="1" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2025-08-04T07:06:25 IST" name="Default suite" finished-at="2025-08-04T07:07:25 IST" duration-ms="59125">
+  <suite started-at="2025-08-15T19:18:07 IST" name="ExtentReport" finished-at="2025-08-15T19:18:33 IST" duration-ms="26130">
     <groups>
       <group name="cucumber">
-        <method signature="AbstractTestNGCucumberTests.runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:org.testRunner.TestRunner@2118cddf]" name="runScenario" class="io.cucumber.testng.AbstractTestNGCucumberTests"/>
+        <method signature="AbstractTestNGCucumberTests.runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:org.testRunner.TestRunner@548e6d58]" name="runScenario" class="io.cucumber.testng.AbstractTestNGCucumberTests"/>
       </group> <!-- cucumber -->
     </groups>
-    <test started-at="2025-08-04T07:06:25 IST" name="Default test" finished-at="2025-08-04T07:07:25 IST" duration-ms="59125">
+    <test started-at="2025-08-15T19:18:07 IST" name="Test" finished-at="2025-08-15T19:18:33 IST" duration-ms="26130">
       <class name="org.testRunner.TestRunner">
-        <test-method is-config="true" signature="setUpClass(org.testng.ITestContext)[pri:0, instance:org.testRunner.TestRunner@2118cddf]" started-at="2025-08-04T07:06:25 IST" name="setUpClass" finished-at="2025-08-04T07:06:26 IST" duration-ms="214" status="PASS">
+        <test-method is-config="true" signature="setUpClass(org.testng.ITestContext)[pri:0, instance:org.testRunner.TestRunner@548e6d58]" started-at="2025-08-15T19:18:07 IST" name="setUpClass" finished-at="2025-08-15T19:18:07 IST" duration-ms="224" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[org.testng.TestRunner@6801b414]]>
+                <![CDATA[org.testng.TestRunner@42b4df5a]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUpClass -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:org.testRunner.TestRunner@2118cddf]" started-at="2025-08-04T07:06:26 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2025-08-04T07:06:44 IST" duration-ms="18657" status="PASS">
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:org.testRunner.TestRunner@548e6d58]" started-at="2025-08-15T19:18:07 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2025-08-15T19:18:18 IST" duration-ms="11034" status="FAIL">
           <params>
             <param index="0">
               <value>
-                <![CDATA["Requesting fund transfer with valid amount and different from/to accounts"]]>
+                <![CDATA["Submit registration form with valid details"]]>
               </value>
             </param>
             <param index="1">
               <value>
-                <![CDATA["Fund Transfer Functionality"]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- runScenario -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:org.testRunner.TestRunner@2118cddf]" started-at="2025-08-04T07:06:44 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2025-08-04T07:07:03 IST" duration-ms="18438" status="FAIL">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA["Requesting fund transfer with same from and to accounts"]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA["Fund Transfer Functionality"]]>
+                <![CDATA["User Registration Validation"]]>
               </value>
             </param>
           </params>
           <exception class="java.lang.AssertionError">
             <message>
-              <![CDATA[Error message mismatch expected [true] but found [false]]]>
+              <![CDATA[Success message not found within timeout.]]>
             </message>
             <full-stacktrace>
-              <![CDATA[java.lang.AssertionError: Error message mismatch expected [true] but found [false]
-at org.testng.Assert.fail(Assert.java:111)
-at org.testng.Assert.failNotEquals(Assert.java:1590)
-at org.testng.Assert.assertTrue(Assert.java:57)
-at org.stepdefinitions.FundTransferSteps.the_system_should_display_an_error_message_indicating(FundTransferSteps.java:103)
-at ✽.The system should display an error message indicating "From and To account numbers should not be the same"(file:///Users/prakashrajendran/git/repository-parabank_script/ParaBank/src/test/resources/FeatureFiles/fundTransferPage.feature:24)
+              <![CDATA[java.lang.AssertionError: Success message not found within timeout.
+at org.stepdefinitions.UserRegistration.the_user_sees_confirmation_message(UserRegistration.java:106)
+at ✽.the user sees confirmation message "Your account was created successfully. You are now logged in."(file:///Users/prakashrajendran/git/repository-parabank_script/ParaBank/src/test/resources/FeatureFiles/register.feature:8)
 ]]>
             </full-stacktrace>
           </exception> <!-- java.lang.AssertionError -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- runScenario -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:org.testRunner.TestRunner@2118cddf]" started-at="2025-08-04T07:07:03 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2025-08-04T07:07:25 IST" duration-ms="21763" status="FAIL">
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:org.testRunner.TestRunner@548e6d58]" started-at="2025-08-15T19:18:18 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2025-08-15T19:18:20 IST" duration-ms="1564" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA["Requesting fund transfer with negative amount"]]>
+                <![CDATA["Submit registration form with missing mandatory fields"]]>
               </value>
             </param>
             <param index="1">
               <value>
-                <![CDATA["Fund Transfer Functionality"]]>
+                <![CDATA["User Registration Validation"]]>
               </value>
             </param>
           </params>
-          <exception class="java.lang.AssertionError">
-            <message>
-              <![CDATA[Error message mismatch expected [true] but found [false]]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[java.lang.AssertionError: Error message mismatch expected [true] but found [false]
-at org.testng.Assert.fail(Assert.java:111)
-at org.testng.Assert.failNotEquals(Assert.java:1590)
-at org.testng.Assert.assertTrue(Assert.java:57)
-at org.stepdefinitions.FundTransferSteps.the_system_should_display_an_error_message__for_negative_amount_indicatfing(FundTransferSteps.java:110)
-at ✽.The system should display an error message for negative amount indicating "The amount cannot be negative"(file:///Users/prakashrajendran/git/repository-parabank_script/ParaBank/src/test/resources/FeatureFiles/fundTransferPage.feature:33)
-]]>
-            </full-stacktrace>
-          </exception> <!-- java.lang.AssertionError -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- runScenario -->
-        <test-method is-config="true" signature="tearDownClass()[pri:0, instance:org.testRunner.TestRunner@2118cddf]" started-at="2025-08-04T07:07:25 IST" name="tearDownClass" finished-at="2025-08-04T07:07:25 IST" duration-ms="19" status="PASS">
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:org.testRunner.TestRunner@548e6d58]" started-at="2025-08-15T19:18:20 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2025-08-15T19:18:22 IST" duration-ms="2609" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Submit registration form with missing mandatory fields"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["User Registration Validation"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:org.testRunner.TestRunner@548e6d58]" started-at="2025-08-15T19:18:22 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2025-08-15T19:18:23 IST" duration-ms="1057" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Submit registration form with missing mandatory fields"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["User Registration Validation"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:org.testRunner.TestRunner@548e6d58]" started-at="2025-08-15T19:18:23 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2025-08-15T19:18:25 IST" duration-ms="1208" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Submit registration form with missing mandatory fields"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["User Registration Validation"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:org.testRunner.TestRunner@548e6d58]" started-at="2025-08-15T19:18:25 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2025-08-15T19:18:26 IST" duration-ms="1108" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Submit registration form with missing mandatory fields"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["User Registration Validation"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:org.testRunner.TestRunner@548e6d58]" started-at="2025-08-15T19:18:26 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2025-08-15T19:18:27 IST" duration-ms="1092" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Submit registration form with missing mandatory fields"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["User Registration Validation"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:org.testRunner.TestRunner@548e6d58]" started-at="2025-08-15T19:18:27 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2025-08-15T19:18:28 IST" duration-ms="1270" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Submit registration form with missing mandatory fields"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["User Registration Validation"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:org.testRunner.TestRunner@548e6d58]" started-at="2025-08-15T19:18:28 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2025-08-15T19:18:29 IST" duration-ms="1064" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Submit registration form with missing mandatory fields"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["User Registration Validation"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:org.testRunner.TestRunner@548e6d58]" started-at="2025-08-15T19:18:29 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2025-08-15T19:18:30 IST" duration-ms="975" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Submit registration form with missing mandatory fields"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["User Registration Validation"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:org.testRunner.TestRunner@548e6d58]" started-at="2025-08-15T19:18:30 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2025-08-15T19:18:32 IST" duration-ms="1628" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Submit registration form with missing mandatory fields"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["User Registration Validation"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:org.testRunner.TestRunner@548e6d58]" started-at="2025-08-15T19:18:32 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2025-08-15T19:18:33 IST" duration-ms="1256" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Submit registration form with an existing username"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["User Registration Validation"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method is-config="true" signature="tearDownClass()[pri:0, instance:org.testRunner.TestRunner@548e6d58]" started-at="2025-08-15T19:18:33 IST" name="tearDownClass" finished-at="2025-08-15T19:18:33 IST" duration-ms="18" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDownClass -->
       </class> <!-- org.testRunner.TestRunner -->
-    </test> <!-- Default test -->
-  </suite> <!-- Default suite -->
+    </test> <!-- Test -->
+  </suite> <!-- ExtentReport -->
 </testng-results>

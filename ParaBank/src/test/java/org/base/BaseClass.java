@@ -42,7 +42,7 @@ public class BaseClass {
 		// Singleton driver getter
 		public static WebDriver getDriver() {
 			if (driver == null) {
-				driver = new SafariDriver();
+				driver = new ChromeDriver();
 			}
 			return driver;
 		}
@@ -198,7 +198,7 @@ public class BaseClass {
 			String timeStamp=new SimpleDateFormat("yyyyMMddHHss").format(new Date());
 			TakesScreenshot ts= (TakesScreenshot)driver;
 			File sourceFile = ts.getScreenshotAs(OutputType.FILE);
-			String targetFilePath=System.getProperty("user.dir")+ "/screenshots/"+ tname + "_" + timeStamp + ".png";
+			String targetFilePath=System.getProperty("user.dir")+ "/reportScreenshots/"+ tname + "_" + timeStamp + ".png";
 			File targetFile=new File(targetFilePath);
 			sourceFile.renameTo(targetFile);
 			return targetFilePath;
@@ -208,19 +208,13 @@ public class BaseClass {
 			    String timeStamp = new SimpleDateFormat("yyyyMMddHHmmss").format(new Date());
 			    TakesScreenshot ts = (TakesScreenshot) driver;
 			    File sourceFile = ts.getScreenshotAs(OutputType.FILE);
-
-			    // Create folder path dynamically based on user input
 			    String folderPath = System.getProperty("user.dir") + "/screenshots/" + folder;
 			    File folderDir = new File(folderPath);
 			    if (!folderDir.exists()) {
-			        folderDir.mkdirs(); // Create folder if it doesn't exist
+			        folderDir.mkdirs();
 			    }
-
-			    // Build target file path inside specified folder
 			    String targetFilePath = folderPath + "/" + tname + "_" + timeStamp + ".png";
 			    File targetFile = new File(targetFilePath);
-
-			    // Move screenshot file
 			    sourceFile.renameTo(targetFile);
 			    return targetFilePath;
 			}
